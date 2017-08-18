@@ -1,0 +1,1 @@
+create 'names_history','name','amount','year'
