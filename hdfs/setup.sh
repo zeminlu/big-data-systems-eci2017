@@ -8,9 +8,5 @@ hdfs dfs -mkdir /user/zeminlu/subwayPassengers/input
 hdfs dfs -mkdir /user/zeminlu/trafficFlow/
 hdfs dfs -mkdir /user/zeminlu/trafficFlow/input
 hdfs dfs -mkdir /user/zeminlu/trafficFlow/output
-hdfs dfs -mkdir /user/zeminlu/peopleNames/
-hdfs dfs -mkdir /user/zeminlu/peopleNames/input
-hdfs dfs -mkdir /user/zeminlu/peopleNames/output
 hdfs dfs -put inputs/subwayPassengers/* /user/zeminlu/subwayPassengers/input
 hdfs dfs -put inputs/trafficFlow/* /user/zeminlu/trafficFlow/input
-hdfs dfs -put inputs/peopleNames/* /user/zeminlu/peopleNames/input

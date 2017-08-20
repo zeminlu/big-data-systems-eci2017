@@ -1,12 +1,11 @@
-# big-data-systems-eci2017
-Big Data Systems ECI 2017 Course exam resolution
+# Big Data Systems - ECI 2017 - Exam Resolution
 
 In this repository, you can find the excercises resolutions.
-Three different problems were approached, each one with a different tool, in order to implement and test the exam resolution.
+Three different problems were approached with tools explained during the course, in order to implement and test the exam resolution.
 
-passengersCount: A DataSet from the Buenos Aires Government regarding the amount of passengers for each subway line and station that paid for a ride, in time slots of 15 minutes, during the first half of 2017. Using hadoop, a map reduce approach processes the data (imported to HDFS) and outputs how many passengers used each subway line. 
+passengersCount: A DataSet from the Buenos Aires Government regarding the amount of passengers for each subway line and station that paid for a ride, in time slots of 15 minutes, during the first half of 2017. Using both Hadoop and Spark (independant solutions), a map reduce approach processes the data (imported to HDFS) and outputs how many passengers used each subway line. 
 
-trafficFlow: A DataSet from the Buenos Aires Government regarding the amount of vehicles that paid highway tolls during 2015. Using spark, a map reduce approach processes the data (imported to HDFS) and outputs how many vehicles passed through each toll station.
+trafficFlow: A DataSet from the Buenos Aires Government regarding the amount of vehicles that paid highway tolls during 2015. Using both Hadoop and Spark (independant solutions), a map reduce approach processes the data (imported to HDFS) and outputs how many vehicles passed through each toll station.
 
 namesHistory: A DataSet from the Buenos Aires Government regarding the registered peoples names, by year, since 1922. Using Pig, a map reduce approach processes the data (imported to HBASE) and outputs how many times each name was registered since 1922.
 
@@ -26,10 +25,8 @@ Folders Details:
 
   inputs: The Data Sets for each problem. Given github doesn't allow to upload such large files, a script to download them is supplied.
 
-  outputs: The output folder for each problem processed data.
-
 Steps to reproduce:
-  It is assumed you have all of the used technologies properly installed, and that the ports in the script are set according to your setup.
+  It is assumed you have all of the used technologies properly installed, and that the ports in the script are set according to your setup, including the output directory.
   It is also assumed you have adjusted the paths in the scripts to your file system structure.
   For Pig, correct connection to HBASE is needed, so Pig should be capable of reading the HBASE configuration files (either through classpath or in the default location).
 
